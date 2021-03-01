@@ -1,318 +1,47 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>David R. Morales</title>
+  </head>
+  <body>
+    <div class="container text-center p-5" id="container">
+      <button onclick="myFunction()">Toggle dark mode</button>
+      <h1>Hello, I'm David Rivera Morales</h1>
+      <h3>A Software</h3>
+    </div>
 
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>MXDui</title>
-    </head>
-    <body>
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="bx bx-menu"></i>
-                </div>
-
-                <div>
-                    <a href="#" class="nav__logo">MXDuibot</a>
-                </div>
-                <div class="nav__menu" id="nav-menu">
-                    <div class="nav__close" id="nav-close">
-                        <i class="bx bx-x"></i>
-                    </div>
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact me!</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-        <main class="1-main">
-            <section class="home" id="home">
-                <div class="home__container bd-grid ">
-                    <div class="home__data">
-                        <div class="home__img">
-                            <img src="assets/img/perfil.png" alt="">
-                        </div>
-
-                        <h1 class="home__title">David Rivera Morales</h1>
-                        <span class="home__profession">Developer & 3D Artist</span>
-                        
-                        <div class="home__social">
-                            <a href="https://play.google.com/store/apps/developer?id=ROMDAO&hl=en" class="home__social-link"><i class="bx bxl-play-store"></i></a>
-                            <a href="#" class="home__social-link"><i class="bx bxl-github"></i></a>
-                            <a href="#" class="home__social-link"><i class="bx bxl-instagram"></i></a>
-                            <a href="#" class="home__social-link"><i class="bx bxl-facebook"></i></a>
-                        </div>
-                        <a download="" href="#" class="button home__button">Download Resume</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="about section" id="about">
-                <span class="section-subtitle">My intro</span>
-                <h2 class="section-title">About Me</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__data">
-                        <p class="about__description">
-                            Hi , I'm a high school kid who likes programming, 3d and videogames. Since 12 I started coding, my first language was C++ but I didn't know what was the reason. Now in 2020 I retake programming , first apps then Unity and finally a little of web development.
-                        </p>
-                        <img src="assets/img/about.png" alt="" class="about__img">
-                    </div>
-                    <div>
-                        <div class="about__information">
-                            <h3 class="about__information-title">Information</h3>
-    
-                            <div class="about__information-data">
-                                <i class="bx bx-user about__information-icon"></i>
-                                <span>David Rivera Morales</span>
-                            </div>
-    
-                            <div class="about__information-data">
-                                <i class="bx bx-phone about__information-icon"></i>
-                                <span>+(52)-55-59-40-90-22</span>
-                            </div>
-    
-                            <div class="about__information-data">
-                                <i class="bx bx-envelope about__information-icon"></i>
-                                <span>mxduibot@gmail.com</span>
-                            </div>
-                        </div>
-                        <div class="about__information">
-                            <h3 class="about__information-title">Experience and support</h3>
-    
-                            <div class="about__information-data">
-                                <i class="bx bx-medal about__information-icon"></i>
-                                <div>
-                                    <span class="about__information-subtitle">1 year developing apps</span>
-                                    <span class="about__information-subtitle-small">ROMDAO in PlayStore</span>
-                                </div>
-                            </div>
-    
-                            <div class="about__information-data">
-                                <i class="bx bx-briefcase about__information-icon"></i>
-                                <div>
-                                    <span class="about__information-subtitle">5+ Projects</span>
-                                    <span class="about__information-subtitle-small">-Apps and 3D</span>
-                                </div>
-                            </div>
-    
-                            <div class="about__information-data">
-                                <i class="bx bx-support about__information-icon"></i>
-                                <div>
-                                    <span class="about__information-subtitle">Support:</span>
-                                    <span class="about__information-subtitle-small">Online 8:00-23:00(GMT-5) </span>
-                                </div>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-            </section>
-            <section class="skills section" id="skills">
-                <span class="section-subtitle">Why Choose Me</span>
-                <h2 class="section-title">My expertise area</h2>
-
-                <div class="skills__container bd-grid">
-                    <div class="skills__content">
-                        <h3 class="skills__subtitle">Frontend</h3>
-                        <div class="skills__data">
-                            <span class="skills__name">Flutter</span>
-                            <span class="skills__number">70%</span>
-                            <span class="skills__bar skills__flutter"></span>
-                        </div>
-
-                        <div class="skills__data">
-                            <span class="skills__name">HTML/CSS</span>
-                            <span class="skills__number">50%</span>
-                            <span class="skills__bar skills__html"></span>
-                        </div>
-
-                        <div class="skills__data">
-                            <span class="skills__name">JavaScript</span>
-                            <span class="skills__number">40%</span>
-                            <span class="skills__bar skills__js"></span>
-                        </div>
-
-                        <div class="skills__data">
-                            <span class="skills__name">C#</span>
-                            <span class="skills__number">40%</span>
-                            <span class="skills__bar skills__csharp"></span>
-                        </div>
-                    </div>
-                    <div class="skills__content">
-                        <h3 class="skills__subtitle">Backend</h3>
-                        <div class="skills__data">
-                            <span class="skills__name">PHP</span>
-                            <span class="skills__number">40%</span>
-                            <span class="skills__bar skills__php"></span>
-                        </div>
-
-                        <div class="skills__data">
-                            <span class="skills__name">Python</span>
-                            <span class="skills__number">40%</span>
-                            <span class="skills__bar skills__python"></span>
-                        </div>
-
-                        <div class="skills__data">
-                            <span class="skills__name">Firebase</span>
-                            <span class="skills__number">60%</span>
-                            <span class="skills__bar skills__firebase"></span>
-                        </div>
-                        <div class="skills__data">
-                            <span class="skills__name">MySQL</span>
-                            <span class="skills__number">50%</span>
-                            <span class="skills__bar skills__mysql"></span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="services section" id="services">
-              <span class="section-subtitle">What I Offer</span>  
-              <h2 class="section-title">My Services</h2>
-              <div class="services__container bd-grid">
-                <div class="services__content">
-                      <i class="bx bx-mobile services__icon"></i>
-                      <h3 class="services__title">Mobile Development</h3>
-                      <p class="services__description">Using Flutter as framework , I'll develop your cross-platform mobile app.</p>
-                  </div>
-                <div class="services__content">
-                    <i class="bx bx-code services__icon"></i>
-                    <h3 class="services__title">Web Development</h3>
-                    <p class="services__description">HTML5 for web development, React support coming soon...</p>
-                </div>
-                <div class="services__content">
-                    <i class="bx bx-cube services__icon"></i>
-                    <h3 class="services__title">Motion Graphics</h3>
-                    <p class="services__description">Motion graphics with Blender 3D , see portfolio in works section.</p>
-                </div>
-                <div class="services__content">
-                    <i class="bx bx-game services__icon"></i>
-                    <h3 class="services__title">Game Developer</h3>
-                    <p class="services__description">Work as your game developer, only Unity.</p>
-                </div>
-              </div>
-            </section>
-            <section class="project section">
-                <div class="project__container bd-grid">
-                    <div class="project__data">
-                        <h2 class="section__title project__title">Do you have a project in mind?</h2>
-                        <p class="project__description">Let me know if you have a project that you in mind , maybe we can make work it out.</p>
-                        <a href="#contact" class="button button__light">Contact Me</a>
-                    </div>
-
-                    <img src="assets/img/projectmind.png" alt="" class="project__img">
-                </div>
-            </section>
-            <section class="works section" id="works">
-                <span class="section-subtitle">My portfolio</span>
-                <h2 class="section-title">Recent Works</h2>
-
-                <div class="works__container bd-grid">
-                    <div class="works__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                        <div class="works__data">
-                            <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
-                            <span class="works__title">Work 1</span>
-                        </div>
-                    </div>
-
-                    <div class="works__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                        <div class="works__data">
-                            <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
-                            <span class="works__title">Work 2</span>
-                        </div>
-                    </div>
-
-                    <div class="works__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                        <div class="works__data">
-                            <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
-                            <span class="works__title">Work 3</span>
-                        </div>
-                    </div>
-
-                    <div class="works__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                        <div class="works__data">
-                            <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
-                            <span class="works__title">Work 4</span>
-                        </div>
-                    </div>
-
-                    <div class="works__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                        <div class="works__data">
-                            <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
-                            <span class="works__title">Work 5</span>
-                        </div>
-                    </div>
-
-                    <div class="works__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                        <div class="works__data">
-                            <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
-                            <span class="works__title">Work 6</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="contact section" id="contact">
-                <span class="section-subtitle">Contact Me</span>
-                <h2 class="section-title">Get In Touch</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
-                        </div>
-                        <input type="text" placeholder="Project" class="contact__input">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="contact__input"></textarea>
-                        <input type="submit" value="Send Message" class="button contact__button">
-                    </form>
-                <div>
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">WhatsApp</h3>
-                        <span class="contact__text">+(52)-55-59-40-90-22</span>
-                        <span class="contact__text">+(52)-55-59-40-90-22</span>
-                    </div>
-
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">E-mail</h3>
-                        <span class="contact__text">mxduibot@gmail.com</span>
-                        <span class="contact__text">mxduibot@gmail.com</span>
-                    </div>
-                </div>
-                    
-
-                </div>
-            </section>
-            <footer class="footer section">
-                <div class="footer__container bd-grid">
-                    <h1 class="footer__title">David</h1>
-                    <p class="footer__description">Hello, I'm David. This is my personal website, consult me here.</p>
-
-                    <div class="footer__social">
-                        <a href="#" class="footer__link"><i class="bx bxl-facebook"></i></a>
-                        <a href="#" class="footer__link"><i class="bx bxl-instagram"></i></a>
-                        <a href="#" class="footer__link"><i class="bx bxl-twitter"></i></a>
-                    </div>
-                    <p class="footer__copy">All rights reserved by BedimCode - 2020</p>
-                </div>
-            </footer>
-
-        </main>
-
-        <script src="assets/js/main.js"></script>
-    </body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
 </html>
