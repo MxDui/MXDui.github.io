@@ -24,16 +24,38 @@
       </div>
     </div>
     <div class="container text-center p-5 mt-5" id="container">
-      <img
-        class="mb-5"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png"
-        alt="Avatar"
-      />
-      <h1>Hi, I'm David Rivera Morales</h1>
-      <h3>A Web and Mobile Developer</h3>
-      <div class="float-left">
-        <h4 class="mt-5">Skills</h4>
-      </div>
+      <section>
+        <img
+          class="mb-5"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png"
+          alt="Avatar"
+        />
+        <h1>Hi, I'm David Rivera Morales</h1>
+        <h3>A Web and Mobile Developer</h3>
+      </section>
+      <section>
+        <div class="text-center">
+          <h3 class="mt-5">Skills</h3>
+          <div class="list-group ml-5 mr-5">
+            <h5 class="list-group-item mt-3">
+                Flutter
+            </h5>
+            <h5 class="list-group-item mt-3">
+                React
+            </h5>
+            <h5 class="list-group-item mt-3">
+                Express
+            </h5>
+            <h5 class="list-group-item mt-3">
+                PostgreSQL
+            </h5>
+            <h5 class="list-group-item mt-3">
+                NodeJS
+            </h5>
+          </div>
+        </div>
+
+      </section>
     </div>
 
     <script
@@ -53,9 +75,11 @@
     ></script>
     <script>
       function toggleMode() {
+        var listGroupItem = document.getElementsByClassName('list-group-item');
         var button = document.getElementById("myButton");
         var element = document.body;
         element.classList.toggle("dark-mode");
+        listGroupItem.classList.toggle('list-group-item-dark');
         if (button.innerHTML === "Light Mode") {
           button.innerHTML = "Dark Mode";
         } else {
