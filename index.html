@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -16,10 +16,25 @@
     <title>David R. Morales</title>
   </head>
   <body>
-    <div class="container text-center p-5" id="container">
-      <button onclick="myFunction()">Toggle dark mode</button>
-      <h1>Hello, I'm David Rivera Morales</h1>
-      <h3>A Software</h3>
+    <div class="container">
+      <div class="row float-right">
+        <button onclick="toggleMode()" class="btn btn-light" id="myButton">
+          Dark Mode
+        </button>
+      </div>
+    </div>
+    <div class="container text-center p-5 mt-5" id="container">
+      <img
+        class="mb-5"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png"
+        alt="Avatar"
+      />
+      <h1>Hi, I'm David Rivera Morales</h1>
+      <h3>A Web and Mobile Developer</h3>
+      <div class="float-left">
+        <h4 class="mt-5">Skills</h4>
+
+      </div>
     </div>
 
     <script
@@ -38,9 +53,15 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      function myFunction() {
+      function toggleMode() {
+        var button = document.getElementById("myButton");
         var element = document.body;
         element.classList.toggle("dark-mode");
+        if (button.innerHTML === "Light Mode") {
+          button.innerHTML = "Dark Mode";
+        } else {
+          button.innerHTML = "Light Mode";
+        }
       }
     </script>
   </body>
