@@ -1,0 +1,20 @@
+body{
+    transition:0.5s;
+    padding: 25px;
+    background-color: #fffffe;
+    color: #00214d;
+}
+
+img{
+    width: 10em;
+    border-radius: 50%;
+}
+.dark-mode{
+    transition: 0.5s;
+    background-color: #232946;
+    color: #fffffe;
+}
+
+.btn-dark{
+    background-color: white;
+}
