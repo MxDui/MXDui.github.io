@@ -2,12 +2,17 @@ body{
     transition:0.5s;
     padding: 25px;
     background-color: #fffffe;
-    color: #00214d;
+    color: #232946;
 }
 
-img{
+.profile-pic{
     width: 10em;
     border-radius: 50%;
+}
+
+.project-1Img{
+    height:50;
+    border-radius: 0%;
 }
 
 .dark-mode{
@@ -18,4 +23,13 @@ img{
 
 .btn-dark{
     background-color: white;
+}
+
+.list-groupDark{
+    transition: 0.5s;
+    color: #232946;
+}
+
+.card-dark{
+    color: #232946;
 }

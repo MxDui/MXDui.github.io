@@ -26,7 +26,7 @@
     <div class="container text-center p-5 mt-5" id="container">
       <section>
         <img
-          class="mb-5"
+          class="mb-5 profile-pic"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png"
           alt="Avatar"
         />
@@ -36,25 +36,45 @@
       <section>
         <div class="text-center">
           <h3 class="mt-5">Skills</h3>
-          <div class="list-group ml-5 mr-5">
-            <h5 class="list-group-item mt-3">
-                Flutter
-            </h5>
-            <h5 class="list-group-item mt-3">
-                React
-            </h5>
-            <h5 class="list-group-item mt-3">
-                Express
-            </h5>
-            <h5 class="list-group-item mt-3">
-                PostgreSQL
-            </h5>
-            <h5 class="list-group-item mt-3">
-                NodeJS
-            </h5>
+          <div class="list-group ml-5 mr-5" id="list-group">
+            <h5 class="list-group-item mt-3">Flutter</h5>
+            <h5 class="list-group-item mt-3">React</h5>
+            <h5 class="list-group-item mt-3">Express</h5>
+            <h5 class="list-group-item mt-3">PostgreSQL</h5>
+            <h5 class="list-group-item mt-3">NodeJS</h5>
           </div>
         </div>
-
+      </section>
+      <section>
+        <div class="text-center pr-5 pl-5">
+          <h3 class="mt-5">Projects</h3>
+          <div class="card mt-3" id="card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png"
+              class="card-img-top project-1Img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="text-center pr-5 pl-5">
+          <h3 class="mt-5">Contact me:</h3>
+        </div>
+          <h4 class="mx-auto">
+            <a href="mailto:mxduibot@gmail.com"> mxduibot@gmail.com</a>
+          </h4>
       </section>
     </div>
 
@@ -75,11 +95,13 @@
     ></script>
     <script>
       function toggleMode() {
-        var listGroupItem = document.getElementsByClassName('list-group-item');
+        var card = document.getElementById("card");
+        var listGroupItem = document.getElementById("list-group");
         var button = document.getElementById("myButton");
         var element = document.body;
         element.classList.toggle("dark-mode");
-        listGroupItem.classList.toggle('list-group-item-dark');
+        listGroupItem.classList.toggle("list-groupDark");
+        card.classList.toggle("card-dark");
         if (button.innerHTML === "Light Mode") {
           button.innerHTML = "Dark Mode";
         } else {
