@@ -4,9 +4,13 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -30,54 +34,74 @@
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png"
           alt="Avatar"
         />
-        <h1>Hi, I'm David Rivera Morales</h1>
-        <h3>A Web and Mobile Developer</h3>
+        <h1 class="text-center">Hi, I'm David Rivera Morales</h1>
+        <h3>A Web and Mobile Developer based in Mexico City</h3>
       </section>
       <section>
         <div class="text-center">
           <h3 class="mt-5">Skills</h3>
-          <div class="list-group ml-5 mr-5" id="list-group">
+          <div class="list-group" id="list-group">
             <h5 class="list-group-item mt-3">Flutter</h5>
             <h5 class="list-group-item mt-3">React</h5>
             <h5 class="list-group-item mt-3">Express</h5>
             <h5 class="list-group-item mt-3">PostgreSQL</h5>
             <h5 class="list-group-item mt-3">NodeJS</h5>
-          </div>
+          </iv>
         </div>
       </section>
       <section>
-        <div class="text-center pr-5 pl-5">
+        <div class="text-center">
           <h3 class="mt-5">Projects</h3>
-          <div class="card mt-3" id="card">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png"
-              class="card-img-top project-1Img"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
+          <div class="row card-dark mb-5">
+            <div class="col-sm-6 mt-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Localis</h5>
+                  <p class="card-text">
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Ver proyecto</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mt-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Dilocus</h5>
+                  <p class="card-text">
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Ver proyecto</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div class="text-center pr-5 pl-5">
-          <h3 class="mt-5">Contact me:</h3>
+        <div class="text-center">
+          <div class="row">
+            <div class="col-sm">
+              <h3 class="mt-3"><a href="" id="blog">Blog✍</a></h3>
+            </div>
+            <div class="col-sm">
+              <h3 class="mt-3">
+                <a href="mailto:mxduibot@gmail.com" id="contact"
+                  >Contact me📝</a
+                >
+              </h3>
+            </div>
+          </div>
         </div>
-          <h4 class="mx-auto">
-            <a href="mailto:mxduibot@gmail.com"> mxduibot@gmail.com</a>
-          </h4>
       </section>
     </div>
-
+    <div class="container-fluid">
+      <div class="text-center">
+        <h5>Made with love by David from 🇲🇽</h5>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -95,13 +119,18 @@
     ></script>
     <script>
       function toggleMode() {
+        var blog = document.getElementById("blog");
+        var contact = document.getElementById("contact");
         var card = document.getElementById("card");
         var listGroupItem = document.getElementById("list-group");
         var button = document.getElementById("myButton");
         var element = document.body;
+
         element.classList.toggle("dark-mode");
         listGroupItem.classList.toggle("list-groupDark");
-        card.classList.toggle("card-dark");
+        blog.classList.toggle("blog-dark");
+        contact.classList.toggle("contact-dark");
+
         if (button.innerHTML === "Light Mode") {
           button.innerHTML = "Dark Mode";
         } else {

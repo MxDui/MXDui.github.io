@@ -1,35 +1,57 @@
-body{
-    transition:0.5s;
-    padding: 25px;
-    background-color: #fffffe;
-    color: #232946;
+body {
+  transition: 0.5s;
+  padding: 25px;
+  background-color: #eff0f3;
+  color: #232946;
 }
 
-.profile-pic{
-    width: 10em;
-    border-radius: 50%;
+.profile-pic {
+  width: 10em;
+  border-radius: 50%;
 }
 
-.project-1Img{
-    height:50;
-    border-radius: 0%;
+.project-1Img {
+  height: 50;
+  border-radius: 0%;
 }
 
-.dark-mode{
-    transition: 0.5s;
-    background-color: #232946;
-    color: #fffffe;
+.dark-mode {
+  transition: 0.5s;
+  background-color: #232946;
+  color: #eff0f3;
 }
 
-.btn-dark{
-    background-color: white;
+.btn-dark {
+  background-color: white;
 }
 
-.list-groupDark{
-    transition: 0.5s;
-    color: #232946;
+.list-groupDark {
+  transition: 0.5s;
+  color: #232946;
 }
 
-.card-dark{
-    color: #232946;
+.card-dark {
+  color: #232946;
 }
+
+.blog-dark{
+  color: #fffffe;
+}
+
+.blog-dark:hover{
+  transition: 0.5s;
+  color: #eebbc3;
+  text-decoration:none;
+}
+
+.contact-dark{
+  color: #fffffe;
+}
+
+.contact-dark:hover{
+  transition: 0.5s;
+  color: #eebbc3;
+  text-decoration: none;
+}
+
+

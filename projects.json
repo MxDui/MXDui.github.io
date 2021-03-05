@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Localis",
+    "summary": "",
+    "technologyStack": ["React", "NodeJS", "Express", "PostgreSQL(PostGis)"]
+  },
+
+  {
+    "name": "DiLocus",
+    "summary": "",
+    "technologyStack": ["Flutter"]
+  }
+]
