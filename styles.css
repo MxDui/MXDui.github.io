@@ -4,6 +4,9 @@ body {
   background-color: #eff0f3;
   color: #232946;
 }
+i{
+  font-size: 2em;
+}
 
 .profile-pic {
   width: 10em;
@@ -54,4 +57,60 @@ body {
   text-decoration: none;
 }
 
+.github{
+  color: #232946;
+}
 
+.github:hover{
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.github-dark{
+  color: #fffffe;
+}
+
+.github-dark:hover{
+  transition: 0.5s;
+  text-decoration:none;
+  color: #eebbc3;
+}
+
+.twitter{
+  color: #232946;
+}
+
+.twitter:hover{
+  transition: 0.5s;
+  text-decoration:none;
+}
+
+.twitter-dark{
+  text-decoration:none;
+  color: #fffffe;
+}
+
+.twitter-dark:hover{
+  transition: 0.5s;
+  text-decoration:none;
+  color: #eebbc3;
+}
+
+.linkedin{
+  color: #232946;
+}
+
+.linkedin:hover{
+  transition: 0.5s;
+  text-decoration:none;
+}
+
+.linkedin-dark{
+  color: #fffffe;
+}
+
+.linkedin-dark:hover{
+  transition: 0.5s;
+  text-decoration:none;
+  color: #eebbc3;
+}

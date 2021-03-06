@@ -5,7 +5,6 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    />
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
@@ -38,6 +37,19 @@
         <h3>A Web and Mobile Developer based in Mexico City</h3>
       </section>
       <section>
+        <div class="mx-auto">
+          <a href="https://github.com/MxDui" class="github" id="github">
+            <i class="ri-github-fill pr-2 pl-2 pt-2"></i>
+          </a>
+          <a href="https://twitter.com/mxduibot" class="twitter" id="twitter">
+            <i class="ri-twitter-fill pr-2 pl-2 pt-2"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/david-rivera-morales-6235b0208/" class="linkedin" id="linkedin">
+            <i class="ri-linkedin-fill pr-2 pl-2 pt-2"></i>
+          </a>
+        </div>
+      </section>
+      <section>
         <div class="text-center">
           <h3 class="mt-5">Skills</h3>
           <div class="list-group" id="list-group">
@@ -61,7 +73,7 @@
                     With supporting text below as a natural lead-in to
                     additional content.
                   </p>
-                  <a href="#" class="btn btn-primary">Ver proyecto</a>
+                  <a href="#" class="btn btn-primary">View project</a>
                 </div>
               </div>
             </div>
@@ -73,7 +85,7 @@
                     With supporting text below as a natural lead-in to
                     additional content.
                   </p>
-                  <a href="#" class="btn btn-primary">Ver proyecto</a>
+                  <a href="#" class="btn btn-primary">View project</a>
                 </div>
               </div>
             </div>
@@ -84,7 +96,7 @@
         <div class="text-center">
           <div class="row">
             <div class="col-sm">
-              <h3 class="mt-3"><a href="" id="blog">Blog✍</a></h3>
+              <h3 class="mt-3"><a href="https://medium.com/@mxduibot" id="blog">Blog✍</a></h3>
             </div>
             <div class="col-sm">
               <h3 class="mt-3">
@@ -119,17 +131,24 @@
     ></script>
     <script>
       function toggleMode() {
+
         var blog = document.getElementById("blog");
         var contact = document.getElementById("contact");
         var card = document.getElementById("card");
         var listGroupItem = document.getElementById("list-group");
         var button = document.getElementById("myButton");
+        var github = document.getElementById("github");
+        var twitter = document.getElementById("twitter");
+        var linkedin = document.getElementById("linkedin");
         var element = document.body;
 
         element.classList.toggle("dark-mode");
         listGroupItem.classList.toggle("list-groupDark");
         blog.classList.toggle("blog-dark");
         contact.classList.toggle("contact-dark");
+        github.classList.toggle("github-dark");
+        twitter.classList.toggle("twitter-dark");
+        linkedin.classList.toggle("linkedin-dark");
 
         if (button.innerHTML === "Light Mode") {
           button.innerHTML = "Dark Mode";
