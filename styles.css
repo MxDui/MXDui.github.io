@@ -4,7 +4,7 @@ body {
   background-color: #eff0f3;
   color: #232946;
 }
-i{
+i {
   font-size: 2em;
 }
 
@@ -37,80 +37,84 @@ i{
   color: #232946;
 }
 
-.blog-dark{
+.blog-dark {
   color: #fffffe;
 }
 
-.blog-dark:hover{
-  transition: 0.5s;
-  color: #eebbc3;
-  text-decoration:none;
-}
-
-.contact-dark{
-  color: #fffffe;
-}
-
-.contact-dark:hover{
+.blog-dark:hover {
   transition: 0.5s;
   color: #eebbc3;
   text-decoration: none;
 }
 
-.github{
+.contact-dark {
+  color: #fffffe;
+}
+
+.contact-dark:hover {
+  transition: 0.5s;
+  color: #eebbc3;
+  text-decoration: none;
+}
+
+.github {
   color: #232946;
 }
 
-.github:hover{
+.github:hover {
   transition: 0.5s;
   text-decoration: none;
 }
 
-.github-dark{
+.github-dark {
   color: #fffffe;
 }
 
-.github-dark:hover{
+.github-dark:hover {
   transition: 0.5s;
-  text-decoration:none;
+  text-decoration: none;
   color: #eebbc3;
 }
 
-.twitter{
+.twitter {
   color: #232946;
 }
 
-.twitter:hover{
+.twitter:hover {
   transition: 0.5s;
-  text-decoration:none;
+  text-decoration: none;
 }
 
-.twitter-dark{
-  text-decoration:none;
+.twitter-dark {
+  text-decoration: none;
   color: #fffffe;
 }
 
-.twitter-dark:hover{
+.twitter-dark:hover {
   transition: 0.5s;
-  text-decoration:none;
+  text-decoration: none;
   color: #eebbc3;
 }
 
-.linkedin{
+.linkedin {
   color: #232946;
 }
 
-.linkedin:hover{
+.linkedin:hover {
   transition: 0.5s;
-  text-decoration:none;
+  text-decoration: none;
 }
 
-.linkedin-dark{
+.linkedin-dark {
   color: #fffffe;
 }
 
-.linkedin-dark:hover{
+.linkedin-dark:hover {
   transition: 0.5s;
-  text-decoration:none;
+  text-decoration: none;
   color: #eebbc3;
+}
+
+.list-group-item {
+  border-radius: 1em;
 }
